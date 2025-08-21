@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>50 Statements Viewer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+      background: #f4f4f9;
+      color: #333;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    #statement {
+      font-size: 1.5em;
+      margin: 30px 0;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    button {
+      padding: 12px 25px;
+      font-size: 1em;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #4CAF50;
+      color: white;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Motivational Statements</h1>
+  <div id="statement">Click the button to see a statement</div>
+  <button onclick="showRandomStatement()">New Statement</button>
+
+  <script>
+    // 🔹 50 statements inside an array
+    const statements = [
+      "ITS NOT THAT HARD.",
+      "EVEN CAN BE DONE ON HTML.",
+      "EVEN I CAN DO IT.",
+      "DID EVEN TAKE MORE THEN ONE HOUR.",
+      "IM NOT EVEN A ENGINEER.",
+      "Dream big, start small.",
+      "Discipline beats motivation.",
+      "Your effort matters.",
+      "Progress, not perfection.",
+      "Be stronger than your excuses.",
+      "Small steps lead to big results.",
+      "You are capable of amazing things.",
+      "Don’t be afraid to fail.",
+      "Keep learning, keep growing.",
+      "Winners never quit.",
+      "Turn obstacles into opportunities.",
+      "Stay focused, stay humble.",
+      "Push yourself, no one else will.",
+      "Celebrate small victories.",
+      "The best time to start is now.",
+      "Consistency builds character.",
+      "Growth begins outside comfort zones.",
+      "Every day is a new chance.",
+      "Your mindset shapes your future.",
+      "Don’t stop until you’re proud.",
+      "Patience is power.",
+      "Keep showing up.",
+      "Great things take time.",
+      "You are your only limit.",
+      "Make it happen.",
+      "Don’t wait for opportunity, create it.",
+      "Do it scared.",
+      "Your dreams are valid.",
+      "Never underestimate yourself.",
+      "Hard work beats talent.",
+      "Stay committed to your goals.",
+      "Keep your head up.",
+      "Be the energy you want to attract.",
+      "Doubt kills more dreams than failure.",
+      "You’re closer than you think.",
+      "Focus on progress.",
+      "Storms make trees take deeper roots.",
+      "Your future is created today.",
+      "Action cures fear.",
+      "Do something today your future self will thank you for.",
+      "Dare to begin.",
+      "Start where you are, use what you have.",
+      "Good things come to those who hustle.",
+      "Your only competition is you."
+    ];
+
+    // 🔹 Function to pick a random statement
+    function showRandomStatement() {
+      const index = Math.floor(Math.random() * statements.length);
+      document.getElementById("statement").innerText = statements[index];
+    }
+  </script>
+</body>
+</html>
